@@ -1,0 +1,842 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : BLOCKOVILLE
+* Template Name : Qrolic
+* File          : Main CSS file
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
+
+
+/* INDEX
+----------------------------------------------------------------------------------------
+01. General css
+02. Header css
+03. why choos us  css
+04. user friendly  css
+05. benefits  css
+06. footer  css
+07. FAQ  css
+08. validation screen  css
+-------------------------------------------------------------------------------------- */
+
+
+/************************************/
+/***** 	   01. General css		 ****/
+/************************************/
+// import css
+@import "veriable.scss";
+@import "mixin.scss";
+
+
+body {
+    font-size: 16px;
+    color: $white;
+    font-family: $font-robot;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 400;
+}
+img {
+    max-width: 100%;
+}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+
+a:hover,
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+::-moz-selection {
+    background: #05cbfc;
+    color: #fff;
+}
+
+::selection {
+    background: #05cbfc;
+    color: #fff;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+button:focus,
+input:focus,
+img:focus,
+.slick-slide:focus,
+textarea:focus,
+input:focus {
+    outline: none;
+}
+.transition{
+    transition: 700ms;
+}
+.center{
+    text-align: center;
+}
+.bg-yellow{
+    background: #F7B633;
+}
+.bg-white{
+    background: $white;
+}
+/************************************/
+/***** 	   02. Header css		 ****/
+/************************************/
+.heade-wrap{
+    position: relative;
+    &::after{
+        @include bg-common;
+        background-image:  url(../images/Group-4400.png);
+        height: 900px;
+        width: 100%;
+        top: 0;
+        background-size: 100% 100%;
+    }
+}
+.nav-link{
+    color: $white;
+    position: relative;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    &::after{
+        @include position-common;
+        width: 0;
+        height: 4px;
+        bottom: 0;
+        background: $white;
+        left: 0;
+        @extend .transition;
+    }
+    &:hover{
+        &::after{
+            width: 100%;
+        }
+    }
+}
+.navbar-brand {
+    margin-right: 100px;
+}
+li.nav-item {
+    margin-right: 20px;
+}
+.login-btn{
+    a{
+        @include white-btn;
+        width: 104px;
+        height: 40px;
+    }
+}
+.navigation-wrap {
+    @include flex-align;
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+.navbar-collapse {
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+.common-title{
+    h1{
+        @include c-h1;
+        line-height: 50px;
+        font-weight: 400;
+    }
+}
+.c-link{
+    a{
+        font-size: 12px;
+        color: $link-color;
+        padding-right: 10px;
+    }
+}
+a.navbar-brand img {
+    width: 190px;
+}
+.navbar{
+    padding-left: 0px;
+}
+.home-inner{
+    h2{
+        font-size: 22px;
+        span{
+            font-size: 10px;
+            float: right;
+            padding-top: 10px;
+        }
+    }
+}
+.pt-100{
+    padding-top: 100px;
+}
+.home-inner {
+    width: 350px;
+    margin-left: auto;
+}
+.form-wrap {
+    margin-top: 20px;
+}
+.form-inner{
+    background: $white;
+    padding: 30px;
+    @include border-radius-8;
+    @include form-shadow;
+}
+.input-group{
+    margin-bottom: 30px;
+    label{
+        width: 100%;
+        color: $gray-primary;
+        font-weight: 500;
+    }
+    .input-field{
+        @include input-border;
+        &:focus{
+            border-color: $border-color;
+        }
+    }
+    &:focus{
+        label{
+            color: $label-black; 
+        }
+    }
+}
+.input-number{
+    .number{
+        width: 60px;
+        padding-right: 20px;
+        position: relative;
+        span{
+            width: 40px;
+            border-bottom: 1px solid $gray-primary;  
+            color: $black;
+            font-size: 14px;           
+        }
+        select{
+            border: none;
+            padding: 2px;
+            border-bottom: 1px solid $gray-primary;  
+            // width: 100%;
+            height: 27px;
+        }
+    }
+    .input-num{
+        width: calc(100% - 60px);
+    }
+}
+.submit-btn{
+    @include primary-btn;
+    margin: auto;
+}
+.submit-group{
+    @extend .center;
+}
+.common-title-wrap {
+    @include flex-center;
+    width: 100%;
+    margin-top: 50px;
+}
+.getstart-btn{
+    margin-top: 15px;
+    a{
+        @include primary-btn
+    }
+}
+.logos{
+    margin-top: 30px;
+    a{
+        width: 35px;
+        height: 35px;
+        @include border-radius-50;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+.home-wrap {
+    padding: 20px 0px;
+}
+.navigation,.login-btn {
+    display: block;
+}
+.login-btn{
+    float: right;
+    margin: 20px 0px;
+}
+.fixed-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: $white;
+    z-index: 999;
+    @include header-shadow;
+}
+.blue-after{
+    color: $blue-primary;
+    &::after{
+        background: $blue-primary;
+    }
+}
+.primary-white{
+    background: $blue-primary !important;
+    color: $white !important;
+}
+.menu-icon{
+    display: block;
+    svg{
+        width: 30px;
+        fill: $white;
+    }
+}
+.fill-white{
+    svg{
+        fill: $blue-primary;
+    }
+}
+.sec-bg{
+    &::after{
+        background-image: url(../images/faq-bg.png);
+        height: 280px;
+    }
+}
+.page-title{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    @extend .center;
+    h1{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 13px;
+    }
+}
+/************************************/
+/***** 	   03. why choos us  css		 ****/
+/************************************/
+.wcu-title{
+    h1{
+        color: $blue-primary;
+        font-size: 60px;
+    }
+}
+.why-choose-us-inner {
+    padding-top: 50px;
+}
+.wcu-content-img{
+    width: 70px;
+    height: 70px;
+    @include border-radius-50;
+    background: $white;
+    @include round-shadow;
+    margin-right: 50px;
+    line-height: 70px;
+    @extend .center;
+}
+.w-content{
+    h5{
+        color: $dark-text-blue;
+        margin-bottom: 5px;
+    }
+    p{
+        @include prg;
+    }
+}
+.wcu-content {
+    @include flex-center;
+    justify-content: flex-start;
+}
+.wcu-content-inner {
+    margin-bottom: 100px;
+}
+.wcu-title{
+    @include flex-center;
+    justify-content: flex-start;
+}
+.why-choose-us-wrap {
+    padding: 150px 0px 200px;
+}
+
+/************************************/
+/***** 	   04. user friendly  css		 ****/
+/************************************/
+.ufi-content{
+    h2{
+        @include medium-heading;
+        margin: 20px 0px;
+    }
+    p{
+        @include prg;
+    }
+}
+.ufi-content{
+    @extend .center;
+    .wcu-content-img{
+        margin: auto;
+    }
+}
+.ufi-wrap{
+    background: #F3F1FF;
+    position: relative;
+    &::before{
+        @include bg-common;
+        background-image: url(../images/Group-4406.png);
+        width: 500px;
+        height: 270px;
+        left: -80px;
+        top: -150px;
+        z-index: 10;;
+    }
+    &::after{
+        @include position-common;
+        background-repeat: no-repeat;
+        background-image: url(../images/graphic.png);
+        width: 875px;
+        height: 270px;
+        right: 0px;
+        bottom: -195px;
+    }
+}
+.ufi-inner {
+    padding: 100px 0px;
+    &::after{
+        @include position-common;
+        background-repeat: no-repeat;
+        background-image: url(../images/Group-4421.png);
+        width: 390px;
+        height: 406px;
+        right: 0;
+        bottom: -45px;
+        z-index: 9;
+    }
+}
+.signup-btn{
+    a{
+        @include primary-btn;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+/************************************/
+/***** 	   05. benefits  css		 ****/
+/************************************/
+.benefits-title{
+    h2{
+        font-size: 36px;
+        color: $blue-primary;
+        @extend .center;
+        margin-bottom: 50px;
+    }
+}
+.invest-today-wrap,.our-product-wrap{
+    max-width: 1200px;
+    margin: auto;
+}
+.benefits-img{
+    width: 65px;
+    height: 65px;
+    @include border-radius-50;
+    margin: auto;
+    background: #F8F8FF;
+    @include flex-align;
+}
+.benefits-content{
+    @extend .center;
+    h5{
+        color: #333333;
+        margin: 20px 0px;
+    }
+    p{
+        color: #555555;
+        font-size: 14px;
+    }
+}
+.benefits-wrap {
+    padding: 300px 0px 100px;
+}
+.b-common-content-wrap{
+    position: relative;
+    &::before{
+        @include bg-common;
+        background-image: url(../images/Shape-BG.png);
+        left: -50px;
+        width: 100%;
+        height: 680px;
+        background-size: 100% 100%;
+    }
+}
+.our-product-content{
+    position: relative;
+    &::after{
+        @include bg-common;
+        background-image: url(../images/Shape-BG-1.png);
+        right: -50px;
+        width: 100%;
+        height: 680px;
+        top: 0;
+        background-size: 100% 100%;
+    }
+}
+.b-common-content{
+    span{
+        color: #20ADD0;
+        font-weight: 500;
+    }
+    h2{
+        color: #7969E6;
+        font-size: 36px;
+        margin: 20px 0px;
+    }
+    p{
+        @include prg;
+    }
+    .getstart-btn{
+        margin-top: 30px;
+    }
+}
+.our-product-content{
+    .b-common-content{
+        padding: 230px 0px 230px 120px;
+    }
+}
+.b-common-content {
+    padding:170px 0px 170px 30px;
+}
+.invest-big-img {
+    padding-right: 50px;
+}
+.invest-big-img{
+    @include flex-center;
+}
+.common-title{
+    input{
+        width: 350px;
+        height: 40px;
+        padding: 5px 20px;
+        border-color: #7969E6;
+        @include border-radius-5;
+        margin-top: 50px;
+        &::placeholder{
+            color: #7969E6;
+        }
+    }
+}
+.the-future-wrap {
+    padding: 100px 0px;
+    .future-content{
+        @include flex-center;
+        justify-content: flex-start;
+    }
+}
+.yellow-shadow{
+    @include yellow-shadow;
+}
+.payment-logos{
+    @extend .center;
+    a{
+        display: inline-block;
+        margin: 0px 20px;
+    }
+}
+.client-img{
+    position: relative;
+    display: inline-block;
+}
+.client-img-wrap{
+    @include flex-center;
+    justify-content: space-around;
+}
+.c-image-bake{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.c-image-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    img{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        @include border-radius-50;
+        object-fit: cover;
+        @include round-shadow;
+    }
+    .i-1{
+        bottom: 70px;
+        left: 100px;
+    }
+    .i-2{
+        width: 68px;
+        height: 68px;
+        top: 125px;
+        left: 177px;
+    }
+    .i-3{
+        width: 85px;
+        height: 85px;
+        top: 170px;
+        right: 50px;
+    }
+    .i-4{
+        width: 95px;
+        height: 95px;
+        bottom: 190px;
+        left: -46px;
+    }
+    .i-5{
+        width: 95px;
+        height: 95px;
+        bottom: -7px;
+        right: 70px;
+    }
+    .i-6{
+        width: 95px;
+        height: 95px;
+        top: -30px;
+        right: 100px;
+    }
+}
+/************************************/
+/***** 	   06. footer  css		 ****/
+/************************************/
+.footer-wrap{
+    background-image: url(../images/Shape-1274.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 250px;
+}
+.footer-content{
+    h3{
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    p{
+        @include footer-prg;
+    }
+}
+.social-icons{
+    margin-top: 30px;
+    a{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+}
+.contact-us{
+    h5{
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+    .c-group{
+        display: flex;
+        margin-bottom: 30px;
+        p{
+           @include footer-prg;
+        }
+        .c-image {
+            margin-right: 20px;
+        }
+    }
+}
+.q-links{
+    ul{
+        li{
+            margin-bottom: 20px;
+            a{
+                @include footer-prg;
+                color: $white;
+            }
+        }
+    }
+}
+.copyright{
+    @extend .center;
+    p{
+        color: #D9DEFF;
+        font-size: 16px;
+        font-weight: 200;
+    }
+}
+.footer-sec {
+    margin-top: 60px;
+    padding: 50px 0px 100px;
+    border-top: 1px solid #D9DEFF;
+}
+/************************************/
+/***** 	   07. FAQ  css		 ****/
+/************************************/
+.gs-link{
+    ul{
+        li{
+            line-height: 30px;
+            a{
+                @include gray-text;
+            }
+            a.active{
+                color: $blue-primary;
+            }
+        }
+    }
+}
+.gs-wrap {
+    padding: 50px 0px;
+}
+.gs-title{
+    h2{
+        font-size: 23px;
+        color: $blue-primary;
+        margin-bottom: 20px;
+    }
+}
+.quick-group{
+    margin-bottom: 30px;
+    &:nth-last-of-type(1){
+        margin-bottom: 0px;
+    }
+    h4{
+        @include black-heading;
+        margin-bottom: 10px;
+    }
+    p{
+        @include light-gray-prg;
+    }
+}
+/************************************/
+/***** 	   08. validation screen  css		 ****/
+/************************************/
+.left-bg{
+    &::after{
+        background-image: url(../images/left-shap.png);
+        height: 680px;
+        background-size: contain;
+    }
+    .common-title-wrap{
+        align-items: end;
+        justify-content: flex-start;
+    }
+}
+.white-title{
+    h1,.c-link a{
+        color: $white;
+    }
+    .getstart-btn{
+        a{
+            background: $white;
+            color: $blue-primary;
+        }
+    }
+}
+.validation-form{
+    .form-inner{
+        @include form-shadow-sec;
+        border: 1px solid rgba(173, 155, 255, 0.27);
+    }
+}
+.ft-title{
+    ul{
+        padding: 15px 70px;
+        display: flex;
+        justify-content: space-between;
+        li{
+            display: inline-block;
+            a{
+                @include medium-primary-heading;
+                opacity: 0.5;
+                position: relative;
+                cursor: pointer;
+            }
+            a.is-selected,a.active{
+                opacity: 1;
+                &::after{
+                    @include position-common;
+                    width: 100%;
+                    height: 4px;
+                    background: $blue-primary;
+                    left: 0;
+                    bottom: -15px;
+                }
+            }
+        }
+    }
+}
+.forgot-pass-link{
+    text-align: right;
+    width: 100%;
+    padding-top: 10px;
+    a{
+        font-size: 12px;
+        color: #e90000;
+        opacity: 0.7;
+    }
+}
+.tab-content.is-selected {
+    display: block;
+}
+.tab-content{
+    display: none;
+}
+.form-inner-title{
+    h3{
+        color: $blue-primary;
+        font-size: 20px;
+    }
+}
+.reset-pass{
+    margin-top: 80px;
+    
+}
+.res-mar{
+    .submit-group{
+        .submit-btn{
+            margin: 0px;
+        }
+    }
+}
+.input-group.active{
+    label{
+         color: #2e2e2e;
+    }
+}
+.left-bg {
+    max-width: 1400px;
+    margin: auto;
+}
+.perot-error{
+    color: #00ff19;
+    font-size: 14px;
+}
+.red-big-error{
+    color: #ff0000;
+    font-size: 20px;
+    opacity: 0.6;
+    margin-top: 20px;
+}

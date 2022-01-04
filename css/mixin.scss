@@ -1,0 +1,146 @@
+// mixin classes
+@mixin flex-center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin position-common {
+    position: absolute;
+    content: '';
+}
+@mixin bg-common {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+@mixin white-btn {
+    line-height: 40px;
+    color: $btn-text-blue;
+    background: $white;
+    text-align: center;
+    display: block;
+    border-radius: 30px;
+}
+@mixin c-h1 {
+    font-size: 35px;
+    color: $blue-primary;
+}
+@mixin primary-btn {
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    text-align: center;
+    color: $white;
+    border: none;
+    border-radius: 50px;
+    @include btn-shadow;
+    display: block;
+    background-image: linear-gradient(to left, rgba(88, 60, 220, 1), rgba(88, 60, 220, 1) , rgba(98, 79, 243, 1));
+}
+@mixin btn-shadow {
+    -webkit-box-shadow: 0px 10px 21px -10px #5400ff;
+    -moz-box-shadow:0px 10px 21px -10px #5400ff;
+    box-shadow: 0px 10px 21px -10px #5400ff;
+}
+@mixin yellow-shadow {
+    -webkit-box-shadow: 0 16px 28px rgba(175, 41, 14, 0.22) !important;
+    -moz-box-shadow: 0 16px 28px rgba(175, 41, 14, 0.22) !important;
+    -o-box-shadow: 0 16px 28px rgba(175, 41, 14, 0.22) !important;
+    box-shadow: 0 16px 28px rgba(175, 41, 14, 0.22) !important;
+}
+@mixin header-shadow {
+    -webkit-box-shadow: 0px 13px 12px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 13px 12px rgba(0, 0, 0, 0.16);
+    -o-box-shadow: 0px 13px 12px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 13px 12px rgba(0, 0, 0, 0.16);
+}
+@mixin round-shadow {
+    -webkit-box-shadow: 3px 5px 16px rgba(121, 105, 230, 0.13);
+    -moz-box-shadow: 3px 5px 16px rgba(121, 105, 230, 0.13);
+    -o-box-shadow: 3px 5px 16px rgba(121, 105, 230, 0.13);
+    box-shadow: 3px 5px 16px rgba(121, 105, 230, 0.13);
+}
+@mixin form-shadow {
+    -webkit-box-shadow: 0 19px 20px #3900ae;
+    -moz-box-shadow: 0 19px 20px #3900ae;
+    -o-box-shadow: 0 19px 20px #3900ae;
+    box-shadow: 0 19px 20px #3900ae;
+}
+@mixin form-shadow-sec {
+    -webkit-box-shadow: 0 19px 20px #ad9bff;;
+    -moz-box-shadow: 0 19px 20px #ad9bff;;
+    -o-box-shadow: 0 19px 20px #ad9bff;;
+    box-shadow: 0 19px 20px #ad9bff;;
+}
+@mixin input-border {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $gray-primary; 
+    @extend .transition;
+}
+@mixin prg {
+    font-size: 16px;
+    color: $text-blue;
+}
+@mixin medium-heading {
+    font-size: 36px;
+    color: $dark-text-blue;
+    font-weight: 400;
+}
+@mixin gray-text {
+    font-size: 18px;
+    color: $dark-gray;
+    font-weight: 700;
+    font-family: $font-robot;
+}
+@mixin black-heading {
+    font-size: 16px;
+    font-weight: 700;
+    color: $black-primary;
+    font-family: $font-robot;
+}
+@mixin light-gray-prg {
+    font-size: 15px;
+    font-weight: 400;
+    color: $light-gray;
+    font-family: $font-robot;
+}
+@mixin medium-primary-heading {
+    font-size: 22px;
+    color: $blue-primary;
+    font-weight: 400;
+    font-family: $font-robot;
+}
+@mixin footer-prg {
+    font-size: 16px;
+    font-weight: 200;
+}
+@mixin border-radius-50 {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+@mixin border-radius-5 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+@mixin border-radius-8 {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}

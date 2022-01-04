@@ -1,0 +1,16 @@
+<svg id="Group_4433" data-name="Group 4433" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1059" height="688.85" viewBox="0 0 1059 688.85">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7a41d8"/>
+      <stop offset="0.005" stop-color="#7a41d8"/>
+      <stop offset="1" stop-color="#6151fb"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#583cdc"/>
+      <stop offset="0.005" stop-color="#583cdc"/>
+      <stop offset="1" stop-color="#624ff3"/>
+    </linearGradient>
+  </defs>
+  <path id="Shape_2139" data-name="Shape 2139" d="M1806.267-10s.305,77.11-216.324,150.4c0,0-20.81,7.622-75.676,26.578,0,0-68.708,24.185-128.334,106.137,0,0-55.083,98.9-97.143,143.772-36.4,39.642-168.309,75.709-257.16,89.878,0,0-.929.169-2.9.575-19,3.914-137.259,31.052-195.654,109.9,0,0-11.226,14.054-32.669,34.3-12.507,9.372-23.273,22.279-53.088,26.951L747.267-10Z" transform="translate(-747.266 10.354)" fill="url(#linear-gradient)"/>
+  <path id="Shape_2142" data-name="Shape 2142" d="M1534.738-3.291s28.035,194.762-176.759,246.353c0,0-88.049,18.894-113.677,62.409,0,0-43.4,75.545-97.437,63.034,0,0-34.551-4.444-74.327-94.863,0,0-26.7-61.322-59.337,1.872,0,0-18.157,52.444-44.346,55.545V-3.456Z" transform="translate(-968.855 3.456)" fill="url(#linear-gradient-2)"/>
+</svg>

@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@media screen and (max-width: 3840px) and (min-width: 2160px) {
+  .footer-wrap {
+    padding-top: 500px; } }
+@media screen and (max-width: 2160px) and (min-width: 1400px) {
+  .footer-wrap {
+    padding-top: 300px; } }
+@media screen and (max-width: 991px) {
+  .login-btn {
+    float: left; }
+
+  .w-content h5 br,
+  .w-content p br,
+  .b-common-content p br,
+  .common-title h1 br,
+  .footer-content p br {
+    display: none; }
+
+  .wcu-content-img {
+    margin-right: 20px;
+    width: 150px; }
+
+  .wcu-title h1 {
+    font-size: 45px; }
+
+  img.round-image {
+    width: 400px; }
+
+  .common-title input {
+    width: 300px; }
+
+  .b-common-content-wrap::before {
+    left: -15px; }
+
+  .common-title h1 {
+    font-size: 30px;
+    line-height: 42px; }
+
+  .ufi-content .wcu-content-img {
+    width: 70px; }
+
+  .home-inner {
+    width: 100%; }
+
+  .home-inner h2 {
+    font-size: 20px; }
+    .home-inner h2 span {
+      float: right; }
+
+  .form-inner {
+    box-shadow: 0 4px 9px #3900ae; }
+
+  .navbar {
+    padding-right: 0px; }
+
+  .navbar-toggler {
+    padding: 0px; }
+
+  .white-title h1 {
+    font-size: 28px; }
+
+  .left-bg::after {
+    background-size: 78% 100%; }
+
+  .page-title p {
+    font-size: 10px; } }
+@media screen and (max-width: 768px) {
+  .heade-wrap::after {
+    height: 600px; }
+
+  .ufi-wrap::before {
+    background-size: contain;
+    width: 350px;
+    height: 200px;
+    top: -100px; }
+
+  .ufi-inner::after {
+    background-size: contain;
+    width: 250px;
+    height: 300px;
+    bottom: -60px; }
+
+  .ufi-wrap::after {
+    background-size: contain;
+    width: 600px;
+    height: 200px;
+    bottom: -140px; }
+
+  .b-common-content {
+    padding: 100px 0px 100px 15px; }
+
+  .our-product-content .b-common-content {
+    padding: 130px 0px 130px 40px; }
+
+  .b-common-content h2 {
+    font-size: 28px;
+    margin: 10px 0px; }
+
+  .b-common-content p {
+    font-size: 13px; }
+
+  .b-common-content-wrap::before {
+    height: 520px; }
+
+  .our-product-content::after {
+    right: -15px;
+    height: 430px;
+    background-size: 100% 100%; }
+
+  img.round-image {
+    width: 270px; }
+
+  .c-image-inner .i-6 {
+    width: 65px;
+    height: 65px;
+    top: -24px;
+    right: 55px; }
+
+  .c-image-inner .i-4 {
+    width: 65px;
+    height: 63px;
+    bottom: 95px;
+    left: -33px; }
+
+  .c-image-inner .i-1 {
+    width: 50px;
+    height: 50px;
+    bottom: 48px;
+    left: 50px; }
+
+  .c-image-inner .i-5 {
+    width: 65px;
+    height: 65px;
+    bottom: -17px;
+    right: 50px; }
+
+  .c-image-inner .i-3 {
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    right: 27px; }
+
+  .c-image-inner .i-2 {
+    width: 45px;
+    height: 45px;
+    top: 80px;
+    left: 105px; }
+
+  .page-title p {
+    font-size: 8px; }
+
+  .page-title h1 {
+    font-size: 25px;
+    margin-bottom: 10px; }
+
+  .sec-bg::after {
+    height: 280px; } }
+@media screen and (max-width: 767px) {
+  .wcu-content-img {
+    width: 70px; }
+
+  .common-title-wrap {
+    margin-top: 0px; }
+
+  .home-inner h2 {
+    color: #583CDC; }
+
+  .home-submit {
+    padding-top: 50px; }
+
+  .wcu-title h1 br {
+    display: none; }
+
+  .wcu-content-inner {
+    margin-bottom: 0px; }
+
+  .wcu-content {
+    margin-top: 30px; }
+
+  .why-choose-us-wrap {
+    padding: 50px 0px 200px; }
+
+  .benefits-wrap {
+    padding: 200px 0px 100px; }
+
+  .benefits-content {
+    margin-bottom: 30px; }
+
+  .invest-today-wrap, .our-product-wrap {
+    max-width: 540px;
+    margin: auto;
+    padding: 0px 15px; }
+
+  .b-common-content-wrap::before {
+    height: 400px; }
+
+  .b-common-content {
+    padding: 100px 50px 100px 50px; }
+
+  .our-product-wrap {
+    margin-top: 100px; }
+
+  .client-img-inner {
+    margin: auto; }
+
+  .our-product-content::after {
+    height: 350px; }
+
+  .our-product-content .b-common-content {
+    padding: 80px 50px 80px 50px; }
+
+  .our-product-content {
+    margin-top: 50px; }
+
+  .future-image {
+    margin-top: 50px; }
+
+  .payment-logos a {
+    margin: 0px 10px; }
+
+  .footer-wrap {
+    padding-top: 200px; }
+
+  .footer-content {
+    margin-bottom: 50px; }
+
+  .invest-big-img {
+    padding-right: 0px; }
+
+  .form-inner {
+    box-shadow: 0px 10px 22px -15px #5400ff; }
+
+  .left-bg::after {
+    background-size: 117% 76%; } }
+@media screen and (max-width: 575px) {
+  .ufi-inner::after {
+    width: 178px;
+    height: 190px;
+    bottom: -20px; }
+
+  .ufi-wrap::before {
+    width: 200px;
+    height: 200px;
+    top: -50px; }
+
+  .ufi-wrap::after {
+    width: 400px;
+    height: 133px;
+    bottom: -94px; }
+
+  .footer-wrap {
+    padding-top: 100px; }
+
+  .q-links.contact-us {
+    margin-top: 20px; }
+
+  .contact-us h5, .contact-us .c-group {
+    margin-bottom: 15px; }
+
+  .q-links ul li {
+    margin-bottom: 10px; }
+
+  .copyright p {
+    font-size: 13px; }
+
+  .left-bg::after {
+    background-size: 130% 72%; }
+
+  .sec-bg::after {
+    height: 230px; }
+
+  .page-title h1 {
+    font-size: 19px; }
+
+  .page-title p {
+    font-size: 5px; } }
+@media screen and (max-width: 420px) {
+  .b-common-content {
+    padding: 100px 0px 100px 0px; }
+
+  .ufi-content p br {
+    display: none; }
+
+  .navbar-brand {
+    margin-right: 0px; }
+
+  .common-title h1 {
+    font-size: 26px;
+    line-height: 33px; }
+
+  .payment-logos a {
+    margin-bottom: 20px; }
+
+  .form-inner {
+    box-shadow: 0 5px 15px -5px #3900ae; }
+
+  .footer-sec {
+    padding: 30px 0px 30px;
+    margin-top: 20px; }
+
+  .heade-wrap::after {
+    background-size: contain; }
+
+  .wcu-title h1, .benefits-title h2 {
+    font-size: 30px; }
+
+  .ufi-content h2 {
+    font-size: 25px; }
+
+  .navigation-wrap .container {
+    padding: 0px; }
+
+  .navbar-toggler {
+    padding-right: 15px; }
+
+  .navbar-brand {
+    padding-left: 15px; }
+
+  .navbar-collapse {
+    padding: 0px 15px; }
+
+  .left-bg::after {
+    background-size: 145% 72%; }
+
+  .sec-bg::after {
+    height: 220px;
+    background-size: 100% 82%; }
+
+  .page-title h1 {
+    font-size: 12px;
+    margin-bottom: 5px; }
+
+  .page-title {
+    padding-top: 10px;
+    padding-bottom: 40px; }
+
+  .page-title p {
+    font-size: 4px; } }
+
+/*# sourceMappingURL=responsive.css.map */
